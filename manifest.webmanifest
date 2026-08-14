@@ -1,0 +1,10 @@
+{
+  "name": "ごはんログ",
+  "short_name": "ごはんログ",
+  "description": "写真だけで簡単に残す個人用食事日記",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f5f2",
+  "theme_color": "#ff6b35",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
