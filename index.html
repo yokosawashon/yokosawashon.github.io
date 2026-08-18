@@ -37,8 +37,16 @@
           <span id="photoPrompt">📷<br>料理写真を選ぶ</span>
         </label>
 
-        <div id="analysisStatus" class="status hidden"><span class="spinner"></span> 店とメニューを予測中…</div>
+        <div id="analysisStatus" class="status hidden"><span class="spinner"></span> <span id="analysisText">料理を詳しく分析中…</span></div>
         <div id="errorMessage" class="error hidden"></div>
+
+        <section id="foodFeatures" class="feature-card hidden"></section>
+
+        <section id="rankedPlacesSection" class="hidden">
+          <h2>この写真のお店は？</h2>
+          <div id="rankedPlaces" class="ranked-places"></div>
+          <p class="note">90%以上は自動入力、60～90%は候補から選択、60%未満は要確認です。</p>
+        </section>
 
         <label>店名<input id="restaurantName" autocomplete="off" placeholder="店名"></label>
         <div id="restaurantCandidates" class="chips"></div>
@@ -58,6 +66,14 @@
         <button id="saveKeyButton" class="primary" type="button">この端末に保存</button>
         <button id="deleteKeyButton" class="danger" type="button">保存済みキーを削除</button>
         <p id="keyStatus" class="note"></p>
+      </div>
+      <div class="card">
+        <h2>Google Places API</h2>
+        <label>ブラウザ用APIキー<input id="googleApiKey" type="password" autocomplete="off" placeholder="AIza…"></label>
+        <button id="saveGoogleKeyButton" class="primary" type="button">この端末に保存</button>
+        <button id="deleteGoogleKeyButton" class="danger" type="button">保存済みキーを削除</button>
+        <p id="googleKeyStatus" class="note"></p>
+        <p class="note">Google Cloudで「Maps JavaScript API」と「Places API (New)」を有効にし、GitHub PagesのURLをHTTPリファラー制限へ登録してください。</p>
       </div>
       <div class="card">
         <h2>データ</h2>
